@@ -1,0 +1,85 @@
+
+
+div.providers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+div.provider-item button, div.networks button {
+    background: none;
+    border: none;
+}
+
+div.providers img {
+    width: 100px;
+}
+
+div.networks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+div.networks img {
+    width: 80px;
+}
+
+div.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+div.action-text {
+    margin-top: 20px;
+}
+
+div.spinner {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 8px solid #333;
+    border-radius: 100%;
+    border-left-color: #fff;
+    animation: spin infinite 2s linear;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform:  rotate(360deg);
+    }
+}
+
+button.disconnect-button {
+    margin-top: 40px;
+    padding:  15px 25px;
+    border: none;
+    max-width: 250px;
+    border-radius: 3px;
+    background: #e1e1e1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+button.start {
+    background: #0d7df2;
+    color: white;
+}
+
+div.action-button {
+    text-align: center;
+    display: none;
+}
